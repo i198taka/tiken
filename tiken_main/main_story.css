@@ -1,0 +1,157 @@
+/*謎１以降非表示*/
+.after-nazo1-error {
+    display: none;
+}
+.after-nazo1 {
+    display: none;
+}
+.after-nazo2 {
+    display: none;
+}
+.after-nazo2-error {
+    display: none;
+}
+.after-nazo3 {
+    display: none;
+}
+.after-nazo3-error {
+    display: none;
+}
+.after-nazo4 {
+    display: none;
+}
+.after-nazo4-error {
+    display: none;
+}
+.tiken4_after {
+    display: none;
+}
+/*背景、フォント*/
+body {
+    background-color: #d6f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*影*/
+.chat-container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 15px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+/*縦並び処理*/
+.message-content {
+    display: flex;
+    flex-direction: column;
+}
+.message-group {
+    display: flex;
+    gap: 10px;
+    max-width: 80%;
+}
+/*話者レイアウト*/
+.speaker{
+    font-size: 12px;
+    color:#666;
+    margin-bottom: 5px;
+}
+/*吹き出し準備*/
+.message-bubble{
+    padding:12px 16px;
+    border-radius:16px;
+    font-size:16px;
+    line-height:1.5;
+    word-break:break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+/*右寄せ(チケン君＆プレイヤー)*/
+.message-group.char-a{
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+.message-group.char-b{
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+/*左寄せ(神)*/
+.message-group.char-c{
+    align-self: flex-start;
+    flex-direction: row;
+}
+.message-group.char-a .message-bubble{
+    background-color: #adffcc;
+    color: #000;
+    border-top-right-radius:2px;
+}
+.message-group.char-b .message-bubble{
+    background-color: #edffad;
+    color: #000;
+    border-top-right-radius:2px;
+}
+.message-group.char-c .message-bubble{
+    background-color: #f5e5d6;
+    color: #000;
+    border-top-left-radius:2px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.header-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 12px;
+    padding:10px 20px;
+    font-family:'M PLUS Rounded 1c', sans-serif;
+}
+.header-container img{
+    width:10%;
+    height:auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.last{
+    text-align:center;
+    padding:20px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+.image-container img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-container2 {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+.image-container2 img{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.tap-area {
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    border-radius:50%;
+    background-color:transparent;
+}
+h3{
+    text-align: center;
+}
